@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <!--페이지 설정부분-->
+<head>
+    <!--저장시에 사용된 인코딩(파일의 저장 형식) 값을 웹브라우저에게 알려준다.-->
+    <meta charset="utf-8"/>
+    <!--IE의 호환성 보기 모드 금지-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!--스마트 장치에서의 해상도 균일화 처리-->
+    <meta name ="viewport" content=""with=device-width, 
+    initial-scale="1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 브라우저에 표시될 문서 제목-->
+    <title>My Web Page</title>
+    <style type = "text/css">
+        #blank {
+            height : 1000px;
+        }
+        #tid {
+            border :  solid 2px black;
+            text-align: center;
+        }
+    </style>
+    <style>
+        table, th, td {
+            border : 1px solid black;
+           
+        }
+        th, td {
+           text-align: center;
+           padding: 15px;
+           border: 2px solid;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <!--글자모양-->
+    <div>
+        <strong>글자를 굵게</strong>
+        <br />
+        <b>글자를 굵게</b>
+        <br />
+        <u>글자에 밑줄</u>
+        <br />
+        <i>글자에 기울임</i>
+        <br />
+        <strong><u><i>글자의 모양 태그는 중첩가능</i></u></strong>
+    </div>
+    <hr />
+
+    <!--단어나 문장의 영역 지정-->
+    <div>
+        <span>SPAN</span>태그는
+        <span>문장 단위로 텍스트 영역을 지정하는것</span>인데,
+        그 자체로는 아무 역할도 하지 않고,
+        문장의 특정 구역에 <span>CSS스타일</span>을 지정할 때 사용합니다
+    </div>
+    <hr />
+
+    <p>
+        <mark>안녕</mark>하세요이이잉ㅇ이이이잉이ㅣ
+    </p>
+
+    <hr />
+    <h1>링크의 기본 사용 방법</h1>
+    <ul id="menu">
+        <li><a href="HelloWorld.html">현재 사이트의 특정 파일로 링크</a></li>
+        <li><a href="http://www.naver.com" target="_blank">다른사이트로 새창</a></li>
+    </ul>
+    <hr />
+    <div id="blank">빈공간</div>
+    <hr />
+    <h1>현재 페이지에서의 링크 이동</h1>
+    <ul>
+        <li><a href="#">현재 페이지의 맨 위로 이동</a></li>
+        <li><a href="#menu">현재 페이지의 특정위치로 이동</a></li>
+    </ul>
+
+    <hr />
+    <!--표 영역-->
+    <table width="300">
+        <caption>굿플레이스 직원명단</caption>
+        <!--제목 영역-->
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>지역</th>
+            </tr>
+        </thead>
+        <!--본문 영역-->
+        <tbody>
+            <tr>
+                <td>김가나</td>
+                <td>23</td>
+                <td>서울</td>
+            </tr>
+            <tr>
+                <td>김룰루</td>
+                <td>25</td>
+                <td>경기</td>
+            </tr>
+            <tr>
+                <td>김다라</td>
+                <td>28</td>
+                <td>인천</td>
+            </tr>
+        </tbody>
+        <!--하단 영역-->
+        <tfoot>
+            <tr>
+                <td colspan="3" >굿플레이스 비상연락망</td> 
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr />
+    <table id="tid">
+        <thead>
+            <tr>
+                <th colspan="2">획득 포인트</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">G획득</td>
+                <td>루비결제 5000G</td>
+            </tr>
+            <tr>
+                <td>가입축하 1000G지급</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>합계</td>
+                <td>15000G</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+<footer>
+    <address>
+        <a href="mailto:j.purplerose@gmail.com">
+            copyright &copy;itpaper.co.kr All right resurved.
+        </a>
+    </address>
+</footer>
+</html>

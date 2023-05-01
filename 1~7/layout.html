@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name ="viewport" content=""with=device-width, 
+    initial-scale="1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+        }
+        #container {
+            width: 800px;
+            margin: auto;
+        }
+        #header {
+            background-color: #ff00ff;
+            width: auto;
+            height: 100px;
+        }
+        #content {
+            background: #00ff00;
+            width: auto;
+            min-height: 300px;
+        }
+        #footer {
+            background-color: orange;
+            width: auto;
+            height: 80px;
+        }
+        #body {
+            width: 640px;
+            background-color: yellow;
+            float: left;
+            min-height: 300px;
+
+        }
+        #sidebar {
+            width: 160px;
+            background-color: blue;
+            float: left;
+            min-height: 300px;
+        }
+        .claer {
+            content: '';
+            display: block;
+            clear: both;
+            float: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            상단영역
+        </div>
+        <div id="content" class="clear">
+            <div id="body">
+            본문영역
+        </div>
+        <div id="sidebar">
+            사이드바
+           </div>
+        </div>
+
+        <div id="footer">
+            하단영역
+        </div>
+    </div>
+</body>
+</html>

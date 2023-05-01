@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <!--페이지 설정부분-->
+<head>
+    <!--저장시에 사용된 인코딩(파일의 저장 형식) 값을 웹브라우저에게 알려준다.-->
+    <meta charset="utf-8"/>
+    <!--IE의 호환성 보기 모드 금지-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!--스마트 장치에서의 해상도 균일화 처리-->
+    <meta name ="viewport" content=""with=device-width, 
+    initial-scale="1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 브라우저에 표시될 문서 제목-->
+    <title>My Web Page</title>
+    <style>
+        #cel{
+            border: 1px solid;
+        }
+        #cel td{
+            border: 1px solid black;
+            padding: 35px;
+            font-size: small;
+        }
+        #cell {
+            border: 1px solid;
+
+            border-spacing: 40px; 
+        }
+        #cell td {
+            border:  1px solid black;
+            padding: 1px ;
+            font-size: small;  
+        }
+        #web {
+            border : 1px solid;
+            width: 1000px;
+        }
+        #web td, th  {
+            border : 1px solid;
+         
+        }
+
+        .a {
+            width: 50px;
+        }
+        .b{
+            text-align: center;
+        }
+        .new {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Cell과 내용 사이의 여백 - cellpadding</h1>
+    <table id="cel">
+        <tr>
+            <td>1-1</td>
+            <td>1-2</td>
+        </tr>
+    </table>
+    
+    <h1>cell과 cell사이의 여백-cellspacing</h1>
+    <table id="cell">
+        <tr>
+            <td>2-1</td>
+            <td>2-2</td>
+        </tr>
+    </table>
+
+    <hr />
+    <!--
+        class와 id의 차이
+        .class는 하나의 태그에 여러 클래스 사용가능 추가 클래스는 
+        띄어쓰기로 구분
+        #id는 여러개의 아이디를 사용할 수 없음
+    -->
+    <h1>공지사항</h1>
+
+    <h3>우리 사이트의 새로운 소식을 알려드립니다.</h3>
+    <hr />
+    <table id="web">
+        <thead>
+            <tr>
+                <th  class="a">번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>조회수</th>
+                <th>작성일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td  class="a b">3</td>
+                <td><a href="#">웹표준 + 웹 접근성 실무완성 수강안내</a></td>
+                <td class="b">관리자</td>
+                <td class="b">123</td>
+                <td class="b">2023-02-14</td>
+            </tr>
+            <tr>
+
+                <td  class="a b">2</td>
+                <td><a href="#">HTML5+반응형웹 수강안내</a></td>
+                <td class="b">관리자</td>
+                <td class="b">123</td>
+                <td class="b">2023-02-14</td>
+            </tr>
+            <tr>
+                <td  class="a b">1</td>
+                <td><a href="#">Javascript+jQuery+Ajax 수강안내</a></td>
+                <td class="b">관리자</td>
+                <td class="b">123</td>
+                <td class="b">2023-02-14</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="b">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="new"><a href="#">새 글 쓰기</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
